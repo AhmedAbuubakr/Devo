@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="description" content="Welcome, Hope you enjoy."/>
+      <link rel="stylesheet" href="style.css"/>
+      <script src="https://kit.fontawesome.com/deefd24c5b.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script></script>
+      <title>Nothing</title>
+    </head>
+     <body>
+       <div class="back">
+
+         <div class="header">
+           <div class="nav">
+             <ul>
+               <li class="logo">Trojan</li>
+               <li class="items"> <a href="#">Home</a> </li>
+               <li class="items"> <a href="#">Projects</a> </li>
+               <li class="items"> <a href="#">Services</a> </li>
+               <li class="items"> <a href="#">About</a> </li>
+               <li class="items"> <a href="#">Contact</a> </li>
+             </ul>
+           </div>
+
+           <div class="text-box">
+             <h1 class="heading-primary">
+               <span class="heading-primary-main">Your Health Is Your Priority</span>
+               <span class="heading-primary-sub">Quality Care</span>
+             </h1>
+             <p>We will help you to feel better and
+             enjoy every single day of your life.</p>
+             <a href="#" class="btn btn-red">READ MORE</a>
+           </div>
+         </div>
+
+         <div class="section">
+           <div class="one">
+             <i class="fas fa-box-open"></i>
+             <h2>Consultation</h2>
+             <span>by professional</span>
+           </div>
+
+           <div class="two">
+             <i class="fab fa-accusoft"></i>
+             <h2>Diagnosis</h2>
+             <span>accurate approach</span>
+           </div>
+
+           <div class="three">
+             <i class="fab fa-500px"></i>
+             <h2>Treatment</h2>
+             <span>individual approach</span>
+           </div>
+
+           <div class="four">
+             <i class="fas fa-ambulance"></i>
+             <h2>Pregnancy care</h2>
+             <span>safety and carefully</span>
+           </div>
+
+           <div class="five">
+             <i class="fas fa-archive"></i>
+             <h2>Pediatric</h2>
+             <span>high-quality kids care</span>
+           </div>
+
+           <div class="six">
+             <i class="fab fa-audible"></i>
+             <h2>Online Help</h2>
+             <span>24/7</span>
+           </div>
+
+           <div class="seven">
+             <h2>Check Our</h2>
+             <h1>Weekly Timetable</h1>
+             <p>You can make an appointment , select the convient time and choose the appropriate doctor here.</p>
+             <a href="#" class="btn sec-btn">READ MORE</a>
+           </div>
+         </div>
+
+       </div>
+     </body>
+  </html>
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --mainColor: #f5c362;
+}
+
+.back {
+  height: 100vh;
+}
+
+.nav {
+  padding: 5px 40px;
+  background: #151515;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav ul li {
+  padding: 15px 0;
+}
+
+.nav ul li.items {
+  text-align: center;
+  margin: 10px;
+  position: relative;
+  transition: .5s;
+}
+
+.nav ul li.items::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 10%;
+  height: 2px;
+  background: #fff;
+  opacity: 0;
+  transition: .5s;
+}
+
+.nav ul li.items:hover::after {
+  opacity: 1;
+  width: 100%;
+}
+
+.nav ul li a {
+  text-decoration: none;
+  color: #710000;
+  font-size: 18px;
+  transition: .3s;
+}
+
+.nav ul li a:hover {
+  color: #a80000;
+}
+
+.nav ul li.logo {
+  color: #a80000;
+  flex: 1;
+  text-align: left;
+  font-size: 23px;
+  font-weight: 600;
+  cursor: default;
+  user-select: none;
+}
+
+@media (max-width: 750px) {
+  .nav {
+    padding: 5px 30px;
+  }
+
+  .nav ul li a {
+    font-size: 20px;
+  }
+
+  .nav ul li.logo {
+    font-size: 25px
+  }
+
+  .nav ul li.items {
+    width: 100%;
+  }
+
+  .nav ul li.items:hover::after {
+    opacity: 0;
+  }
+
+  .nav ul li.items:hover {
+    box-shadow: inset 0 0 5px #fff,
+                inset 0 0 5px #fff;
+  }
+}
+
+.header {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+}
+
+.heading-primary {
+  display: inline-block;
+  color: transparent;
+  background: linear-gradient(to right, #a80000, #151515);
+  -webkit-background-clip: text;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 55px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.text-box p {
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px 25px;
+  background:  rgba(168, 0, 0, 0.7);
+  font-weight: bold;
+  transition: .5s;
+  text-align: center;
+  position: relative;
+}
+
+.btn:hover {
+  background:  rgba(168, 0, 0, 0.99);
+}
+
+.btn:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #151515;
+  transition: .6s;
+}
+
+.btn:hover::after {
+  width: 50%;
+}
+
+.btn:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background: #151515;
+  transition: .6s;
+}
+
+.btn:hover::before {
+  width: 50%;
+}
+
+.section {
+  background: green;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.section
+.one,
+.two,
+.three,
+.four,
+.five,
+.six {
+  background: darkkhaki;
+  padding: 50px;
+}
+
+.one i,
+.two i,
+.three i,
+.four i,
+.five i,
+.six i {
+  font-size: 50px;
+  color: #a80000;
+}
+
+.one h2,
+.two h2,
+.three h2,
+.four h2,
+.five h2,
+.six h2 {
+  margin: 15px 0;
+}
+
+.one span
+.two span,
+.three span,
+.four span,
+.five span,
+.six {
+  margin: 15px 0;
+}
+
+.seven {
+  background: aqua;
+  grid-area: 1 / 4 / 1 / 4;
+}
+
+.seven h2 {
+  padding: 60px 20px 20px 20px;
+}
+
+.seven h1 {
+  padding: 0 20px 20px 20px;
+}
+
+.seven p {
+  padding: 0 20px 20px 20px;
+}
+
+.seven a {
+}

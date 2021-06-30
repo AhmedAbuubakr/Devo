@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sword | سيف">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/374d332d83.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <title>Sword | سيف</title>
+    <style></style>
+    <script></script>
+  </head>
+  <body>
+    <p data-person="Osama">This Is Very Very Long Comment Number One</p>
+    <p data-person="Ahmed">This Is Very Very Long Comment Number Two</p>
+    <p data-person="Sayed">This Is Very Very Long Comment Number Three</p>
+  </body>
+</html>
+
+
+* {
+  font-family: "Cairo";
+}
+
+p {
+  width: 400px;
+  margin: 50px auto;
+  border-left: 5px solid #e91e63;
+  padding: 7px 10px;
+  background: #bbbb;
+  position: relative;
+}
+
+p::before {
+  content: attr(data-person);
+  position: absolute;
+  left: -100px;
+  top: 0;
+  width: 50px;
+  padding: 7px 10px;
+  background: #bbbbbb;
+  text-align: center;
+}
+
+p::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translate(-50%,-50%);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #e91e63 transparent transparent;
+}

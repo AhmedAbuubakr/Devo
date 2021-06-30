@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="description" content="Welcome, Hope you enjoy."/>
+      <link rel="stylesheet" href="style.css"/>
+      <script src="https://kit.fontawesome.com/deefd24c5b.js" crossorigin="anonymous"></script>
+      <title>Nothing</title>
+    </head>
+     <body>
+       <div class="back">
+         <div class="back-2">
+           <div class="line-1"></div>
+           <div class="line-2"></div>
+           <div class="line-3"></div>
+           <div class="circle-1"></div>
+           <div class="circle-2"></div>
+           <div class="circle-3"></div>
+         </div>
+       </div>
+     </body>
+  </html>
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.back {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #1A4341;
+}
+
+.back-2 {
+  width: 400px;
+  height: 400px;
+  background: #F3AC3C;
+  border-radius: 50%;
+  position: relative;
+}
+
+.line-1,
+.line-2,
+.line-3 {
+  content: "";
+  position: absolute;
+  background: #F3AC3C;
+  border-radius: 10px;
+  width: 25px;
+  height: 170%;
+  transform: translate(-50%, -50%);
+}
+
+.line-1 {
+  top: -25%;
+  left: 50%;
+  transform: rotate(120deg);
+}
+
+.line-2 {
+  top: -25%;
+  left: 50%;
+  transform: rotate(420deg);
+}
+
+.line-3 {
+  top: 50%;
+  left: 50%;
+}
+
+.circle-1,
+.circle-2,
+.circle-3 {
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #998235;
+}
+
+.circle-1 {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+
+.circle-2 {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
+
+.circle-3 {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 30%;
+  left: 80%;
+}

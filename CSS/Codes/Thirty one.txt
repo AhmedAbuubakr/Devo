@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="description" content="Welcome, Hope you enjoy."/>
+      <link rel="stylesheet" href="style.css"/>
+      <script src="https://kit.fontawesome.com/deefd24c5b.js" crossorigin="anonymous"></script>
+      <title>Nothing</title>
+    </head>
+     <body>
+       <h3>Flex</h3>
+       <div class="flex">
+         <div>One</div>
+         <div>Two</div>
+         <div>Three</div>
+         <div>Four</div>
+       </div>
+       <h3>Float</h3>
+       <div class="float">
+         <div>One</div>
+         <div>Two</div>
+         <div>Three</div>
+         <div>Four</div>
+       </div>
+     </body>
+  </html>
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.flex {
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex div {
+  background: #f00;
+  color: #fff;
+  width: calc(95% / 4);
+  padding: 20px;
+  text-align: center;
+}
+
+.float {
+  overflow: hidden;
+  width: 600px;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+.float div {
+  background: #f00;
+  color: #fff;
+  float: left;
+  width: calc(92% / 4);
+  padding: 20px;
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+h3 {
+  margin: 20px 10px;
+}
+
+/* .two {
+  margin-left: 2%;
+  margin-right: 2%;
+} */

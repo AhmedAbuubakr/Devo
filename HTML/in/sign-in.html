@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Login">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+    <!-- Google font open sans -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <h2>Sign in</h2>
+            <form>
+                <!-- Name -->
+                <div class="group">
+                    <label for="fir" class="label">Full name</label>
+                    <i class="fas fa-user"></i>
+                    <input id="fir" type="text" class="inp-grp" placeholder="Full name">
+                </div>
+                <!-- Email -->
+                <div class="group">
+                    <label for="ema" class="label">Email</label>
+                    <i class="fas fa-envelope"></i>
+                    <input id="ema" type="email" class="inp-grp" placeholder="email@example.com">
+                </div>
+                <!-- Password -->
+                <div class="group">
+                    <label for="pass" class="label">Password</label>
+                    <i class="fas fa-unlock-alt"></i>
+                    <input id="pass" type="email" class="inp-grp" placeholder="Password">
+                </div>
+                <!-- Remember and Forgot -->
+                <div class="info line">
+                    <div class="group">
+                        <input id="check" type="checkbox" class="checkbox">
+                        <label for="check">Remember me</label>
+                    </div>
+                    <div class="group">
+                        <a href="#" class="forg">Forgot password?</a>
+                    </div>
+                </div>
+                <ul class="links">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </form>
+            <!-- Send -->
+            <div class="foot">
+                <a href="../index.html" class="btn">Send</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

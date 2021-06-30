@@ -1,0 +1,40 @@
+<h1>Elzero</h1>
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: serif;
+}
+
+:root {
+  --mainColor: #ff5722;
+  --secColor: #fff;
+  --thiColor: #009688;
+}
+
+h1 {
+  width: 150px;
+  background: #009688;
+  padding: 15px;
+  margin: 50px auto;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 15px;
+  height: 100%;
+  background: #009688;
+  outline: 4px solid #fff;
+  transform: skewx(15deg);
+}

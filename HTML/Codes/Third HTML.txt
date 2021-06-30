@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Ninja Store</title>
+    <meta name="description" content="Sword / سيف"/>
+    <link rel="stylesheet" href="">
+    <style></style>
+    <script></script>
+    <!-- This is test comment -->
+  </head>
+  <body>
+
+    <header>
+      <h1>Sword Store</h1>
+      <ul>
+        <li>Home</li>
+        <li>Services</li>
+        <li>Projects</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </header>
+    <hr>
+    <nav>
+      <ul>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+        <li>Link</li>
+      </ul>
+    </nav>
+    <hr>
+    <section>
+      <figure>
+        <img src="photo.jpg" alt="Photo">
+        <figcaption>Caption of the photo</figcaption>
+      </figure>
+    </section>
+    <aside>
+      Sidebar
+    </aside>
+    <hr>
+    <footer>
+      Footer
+    </footer>
+  </body>
+</html>

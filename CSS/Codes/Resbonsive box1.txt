@@ -1,0 +1,69 @@
+       <div class="parent">
+         <div class="one">One</div>
+         <div class="two">Two</div>
+         <div class="three">Three</div>
+         <div class="four">Four</div>
+       </div>
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --secColor: #151515;
+  --thiColor: darkred;
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.parent div {
+  background: #151515;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+/* Mobile Screens */
+
+@media (max-width: 767px) {
+  .parent div {
+    margin: 5px;
+  }
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) {
+  .parent div {
+    width: calc(50% - 10px);
+    margin: 5px;
+  }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+  .parent div {
+    width: calc(25% - 10px);
+    margin: 5px;
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+
+}

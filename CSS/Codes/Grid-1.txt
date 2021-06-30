@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="description" content="Welcome, Hope you enjoy."/>
+      <link rel="stylesheet" href="style.css"/>
+      <script src="https://kit.fontawesome.com/deefd24c5b.js" crossorigin="anonymous"></script>
+      <title>Nothing</title>
+    </head>
+     <body>
+       <div class="page">
+         <h2>$ilvador</h2>
+         <nav>
+           <ul>
+             <li>Home</li>
+             <li>Projects</li>
+             <li>Services</li>
+             <li>About</li>
+             <li>Contacts</li>
+           </ul>
+         </nav>
+         <section>Content</section>
+         <aside>Sidebar</aside>
+         <footer>Footer</footer>
+       </div>
+     </body>
+  </html>
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --mainColor: #fff;
+  --secColor: #999;
+  --thirdColor: #000;
+}
+
+.page {
+  height: 100vh;
+  background: var(--secColor);
+  color: var(--mainColor);
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 50px auto 50px;
+  grid-template-areas:
+  "logo logo nav nav nav nav nav nav nav nav"
+  "cont cont cont cont cont cont cont side side side"
+  "foot foot foot foot foot foot foot foot foot foot";
+  gap: 10px 10px;
+}
+
+h2 {
+  grid-area: logo;
+  background: blue;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  grid-area: nav;
+  background: red;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 15px 10px;
+}
+
+section {
+  grid-area: cont;
+  background: darkgreen;
+  padding: 15px;
+}
+
+aside {
+  grid-area: side;
+  background: darkgoldenrod;
+  padding: 15px;
+}
+
+footer {
+  grid-area: foot;
+  text-align: center;
+  background: aqua;
+  padding: 15px;
+}

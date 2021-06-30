@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sword / سيف">
+    <link rel="stylesheet" href="style.css">
+    <title>Sword : سيف</title>
+    <style>h2{ text-align: center;}</style>
+    <script></script>
+  </head>
+  <body>
+    <h2>Welcome</h2>
+
+    <form>
+      <div>
+        <label for="user">Username</label>
+        <br>
+        <input id="user" type="text" name="user" minlength="10" maxlength="20" required autofocus>
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <br>
+        <input id="email" type="email" name="email" required>
+      </div>
+      <div>
+        <label for="pass">Password</label>
+        <br>
+        <input id="pass" type="password" name="pass" minlength="10" maxlength="16" required>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <input id="win" type="radio" name="os" value="windows" required>
+          <label for="win">Windows</label>
+        </div>
+        <div>
+          <input id="lin" type="radio" name="os" value="linux" required>
+          <label for="lin">Linux</label>
+        </div>
+        <div>
+          <input id="mac" type="radio" name="os" value="mac" required>
+          <label for="mac">Mac</label>
+        </div>
+        <div>
+          <input id="and" type="radio" name="os" value="android" required>
+          <label for="and">Android</label>
+        </div>
+        <div>
+          <input id="app" type="radio" name="os" value="appstore" required>
+          <label for="app">Appstore</label>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <input id="chr" type="checkbox" name="br" value="chrome">
+          <label for="chr">Chrome</label>
+        </div>
+        <div>
+          <input id="fir" type="checkbox" name="br" value="firefox">
+          <label for="fir">FireFox</label>
+        </div>
+        <div>
+          <input id="bra" type="checkbox" name="br" value="brave">
+          <label for="bra">Brave</label>
+        </div>
+        <div>
+          <input id="ope" type="checkbox" name="br" value="opera">
+          <label for="ope">Opera</label>
+        </div>
+        <div>
+          <input id="saf" type="checkbox" name="br" value="safari">
+          <label for="saf">Safari</label>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <input list="country">
+        <datalist id="country">
+          <option value="Egypt">
+          <option value="Palestine">
+          <option value="Syria">
+          <option value="Iraq">
+        </datalist>
+      </div>
+      <hr>
+      <div>
+        <label for="sel">Choose:</label>
+        <select id="sel" name="choose">
+          <optgroup label="Conputers">
+            <option value="hp">Hp</option>
+            <option value="dell">Dell</option>
+            <option value=""lenovo>Lenovo</option>
+          </optgroup>
+          <optgroup label="Mobiles">
+            <option value="iphone">Iphone</option>
+            <option value="samsung">Samsung</option>
+            <option value="xiaomi">Xiaomi</option>
+          </optgroup>
+          <optgroup label="Televisiton">
+            <option value="panasonic">Panasonic</option>
+            <option value="sharp">Sharp</option>
+            <option value="tcl">TCL</option>
+          </optgroup>
+        </select>
+      </div>
+      <hr>
+      <div>
+        <textarea rows="12" cols="223" placeholder="Your opinion?"></textarea>
+      </div>
+      <hr>
+      <div>
+        <input type="reset" name="reset" value="Reset">
+        <input type="submit" name="send" value="Send">
+      </div>
+    </form>
+
+  </body>
+</html>

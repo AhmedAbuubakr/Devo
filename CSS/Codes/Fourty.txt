@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sword | سيف">
+    <link rel="stylesheet" href="style.css">
+    <title>Sword | سيف</title>
+    <style></style>
+    <script></script>
+  </head>
+  <body>
+    <div>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, sed. Ea ipsum
+      similique quasi rem, fugiat voluptatibus reiciendis nam debitis earum quo veniam
+      laudantium mollitia atque! Laborum ea nam doloribus.
+      <span class="top-left">1</span>
+      <span class="bottom-left">2</span>
+      <span class="top-right">3</span>
+      <span class="bottom-right">4</span>
+   </div>
+  </body>
+</html>
+
+div {
+  font-family: sans-serif;
+  width: 400px;
+  text-align: center;
+  margin: 200px auto;
+  padding: 15px;
+  border-top: 2px solid #f44437;
+  border-bottom: 2px solid #f44437;
+  border-left: 2px solid #2397f3;
+  border-right: 2px solid #2397f3;
+  position: relative;
+}
+
+span {
+  color: #fff;
+}
+
+.top-left {
+  position: absolute;
+  top: -12px;
+  left: -14px;
+  background: #2397f3;
+  padding: 2px 9px;
+  border-right: 2px solid #f44437;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: -12px;
+  left: -14px;
+  background: #2397f3;
+  padding: 2px 9px;
+  border-right: 2px solid #f44437;
+}
+
+.top-right {
+  position: absolute;
+  top: -12px;
+  right: -14px;
+  background: #2397f3;
+  padding: 2px 9px;
+  border-left: 2px solid #f44437;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: -12px;
+  right: -14px;
+  background: #2397f3;
+  padding: 2px 9px;
+  border-left: 2px solid #f44437;
+}

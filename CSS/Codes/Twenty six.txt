@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sword | سيف">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/374d332d83.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <title>Sword | سيف</title>
+    <style></style>
+    <script></script>
+  </head>
+  <body>
+
+    <div class="main">
+        <div class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Cvv</a></li>
+            <li><a href="#">Content</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a>
+              <div class="con">
+                <ul>
+                  <li>Mouse</li>
+                  <li>Keyboard</li>
+                  <li class="hover">Cursor
+                    <div class="con2">
+                      <ul>
+                        <li>Phone</li>
+                        <li>Number</li>
+                        <li>Email</li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+  </body>
+</html>
+
+* {
+  font-family: "Cairo";
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 5000px;
+  background: red
+}
+
+.main {
+  background: url(../Photos/Screenshot_16.png) center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  text-align: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: inline-flex;
+}
+
+.nav ul li {
+  margin: 15px;
+  padding: 5px;
+}
+
+.nav ul li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  transition: background-color .3s,color .2s ease-in-out;
+  padding: 2px 20px;
+}
+
+.nav ul li a:hover {
+  background: #000;
+  color: #fff;
+}
+
+.nav ul li a:focus {
+  border-bottom: 2px solid #000;
+}
+
+.con {
+  display: none;
+}
+
+.nav ul li:hover .con {
+  display: block;
+  position: absolute;
+  color: #000;
+  background: #fff;
+  margin: 2px -18px;
+}
+
+.nav ul li:hover .con ul {
+  display: block;
+}
+
+.nav ul li:hover .con ul li {
+  border-bottom: 1px solid #000;
+  width: 120px;
+  margin: 10px 5px;
+}
+
+.nav ul li:hover .con ul li:hover {
+  background: #000;
+  color: #fff;
+}
+
+.nav ul li:hover .con ul li:last-child {
+  border: 0;
+}
+
+.con2 {
+  display: none;
+}
+
+.hover:hover .con2 {
+  position: absolute;
+  display: block;
+  background: #fff;
+  color: #000;
+  margin: -45px 120px;
+}

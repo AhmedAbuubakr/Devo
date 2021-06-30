@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="description" content="Welcome, Hope you enjoy."/>
+      <link rel="stylesheet" href="style.css"/>
+      <script src="https://kit.fontawesome.com/deefd24c5b.js" crossorigin="anonymous"></script>
+      <title>Nothing</title>
+    </head>
+     <body>
+       <div class="layout">
+         <header  element="Header"  ></header>
+         <section element="Section" ></section>
+         <aside   element="Aside"   ></aside>
+         <footer  element="Footer"  ></footer>
+       </div>
+     </body>
+  </html>
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+:root {
+      /* COLOR */
+  --mainColor: #fff;
+  --secColor: #999;
+  --thirdColor: #000;
+
+     /* PADDING */
+  --mainPadding: 10px;
+  --secPadding: 15px;
+  --thidPadding: 30px;
+}
+
+.layout {
+  background: red;
+  color: #fff;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px auto 80px;
+  grid-template-areas:
+  "head head head"
+  "sec sec asi"
+  "foot foot foot";
+}
+
+.layout header {
+  grid-area: head;
+  background: #03a9f4;
+  position: relative;
+}
+
+.layout header::before {
+  content: attr(element);
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+}
+
+.layout section {
+  grid-area: sec;
+  background: #ff5722;
+  position: relative;
+}
+
+.layout section::before {
+  content: attr(element);
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translate(-50%, -50%);
+}
+
+
+.layout aside {
+  grid-area: asi;
+  background: #607d8b;
+  position: relative;
+}
+
+.layout aside::before {
+  content: attr(element);
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+}
+
+.layout footer {
+  grid-area: foot;
+  background: #009688;
+  position: relative;
+}
+
+.layout footer::before {
+  content: attr(element);
+  position: absolute;
+  top: 50%;
+  left: 3%;
+  transform: translate(-50%, -50%);
+}

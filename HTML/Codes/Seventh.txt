@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>Ninja Store</title>
+    <meta name="description" content="Sword / سيف"/>
+    <link rel="stylesheet" href="style.css">
+    <style></style>
+    <script></script>
+    <!-- This is test comment -->
+  </head>
+  <body>
+    <h1>Sword</h1>
+
+    <form novalidate target="_blank">
+     <div class="user">
+        <div>
+          <label for="user">Username</label>
+          <br>
+          <input id="user" type="text" name="user" required autofocus>
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <br>
+          <input id="email" type="email" name="email" required>
+        </div>
+
+        <div>
+          <label for="pass">Password</label>
+          <br>
+          <input id="pass" type="password" name="pass" minlength="10" maxlength="16" required>
+        </div>
+      </div>
+      <hr>
+      <div class="radio">
+        <div>
+          <input id="win" type="radio" name="os" value="windows" checked>
+          <label for="win">Windows</label>
+        </div>
+        <br>
+        <div>
+          <input id="and" type="radio" name="os" value="android">
+          <label for="and">Android</label>
+        </div>
+        <br>
+        <div>
+          <input id="app" type="radio" name="os" value="appstore">
+          <label for="app">Appstore</label>
+        </div>
+      </div>
+      <hr>
+      <div class="check">
+        <div>
+          <input id="fir" type="checkbox" name="fir" value="first" checked>
+          <label for="fir">First</label>
+        </div>
+        <br>
+        <div>
+          <input id="sec" type="checkbox" name="sec" value="second">
+          <label for="sec">Second</label>
+        </div>
+        <br>
+        <div>
+          <input id="thi" type="checkbox" name="thi" value="third">
+          <label for="thi">Third</label>
+        </div>
+      </div>
+      <hr>
+      <div class="select">
+        <label for="cho">Choose:</label>
+        <select name="choose" id="cho">
+          <optgroup label="Computer">
+            <option value="redragon" selected>Redragon</option>
+            <option value="logitech">Logitech</option>
+            <option value="razer">Razer</option>
+          </optgroup>
+          <optgroup label="Mobile">
+            <option value="iphone">Iphone</option>
+            <option value="samsung">Samsung</option>
+            <option value="xiaomi">Xiaomi</option>
+          </optgroup>
+          <optgroup label="Television">
+            <option value="panasonic">Panasonic</option>
+            <option value="sharp">Sharp</option>
+            <option value="tcl">TCL</option>
+          </optgroup>
+        </select>
+      </div>
+      <hr>
+      <div class="text">
+        <textarea name="details" rows="10" cols="221" minlength="10" maxlength="50" placeholder="Tell me your opinion."></textarea>
+      </div>
+      <hr>
+      <div>
+        <label for="fil">Upload</label>
+        <input id="fil" type="file">
+      </div>
+      <hr>
+      <div>
+        <label for="sea">Search</label>
+        <input id="sea" type="search">
+      </div>
+      <hr>
+      <div>
+        <label for="url">Url</label>
+        <input id="url" type="url">
+      </div>
+      <hr>
+      <div>
+        <label for="dat">Date</label>
+        <input id="dat" type="date">
+      </div>
+      <hr>
+      <div>
+        <label for="month">Month</label>
+        <input id="month" type="month">
+      </div>
+      <hr>
+      <div>
+        <label for="time">Time</label>
+        <input id="time" type="time">
+      </div>
+      <hr>
+      <input list="names" name="nam">
+      <datalist id="names">
+        <option value="Ahmed">
+        <option value="Mohamed">
+        <option value="Khaled">
+        <option value="Abdo">
+        <option value="Abdelbasset">
+        <option value="Mariam">
+        <option value="Sanna">
+        <option value="Kareem">
+        <option value="Bakr">
+        <option value="Fekry">
+      </datalist>
+      <hr>
+      <div class="footer">
+        <input type="submit" name="send" value="Send">
+        <input type="reset" name="reset" value="Reset">
+      </div>
+    </form>
+
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sword | سيف">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/374d332d83.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
+    <title>Sword | سيف</title>
+    <style></style>
+    <script></script>
+  </head>
+  <body>
+
+    <div class="parent">
+      <div class="one"></div>
+      <div class="two">
+        <div class="new">
+          <div class="up"></div>
+        </div>
+        <div class="down"></div>
+      </div>
+    </div>
+
+  </body>
+</html>
+
+* {
+  font-family: "Cairo";
+  box-sizing: border-box;
+}
+
+.parent {
+  overflow: hidden;
+  margin: auto;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+}
+
+.parent .one,
+.parent .two {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.one {
+  background: aqua;
+}
+
+.two {
+  background: blueviolet;
+}
+
+.up {
+  background: brown;
+  height: 80px;
+  margin-bottom: 40px;
+}
+
+.down {
+  background: blue;
+  height: 80px;
+  margin-top: 20px;
+}

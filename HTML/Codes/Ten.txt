@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Silvador</title>
+    <meta name="description" content="Welcome, Hope you like my website thank you.">
+    <link rel="stylesheet" href="master.css">
+    <style></style>
+    <script></script>
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="use">Username</label>
+        <br>
+        <input id="use" type="text" name="username" minlength="5" maxlength="12" required autofocus>
+      </div>
+      <hr>
+      <div>
+        <label for="ema">Email</label>
+        <br>
+        <input id="ema" type="email" name="email" required>
+      </div>
+      <hr>
+      <div>
+        <label for="pas">Password</label>
+        <br>
+        <input id="pas" type="password" name="password" minlength="15" maxlength="25" required>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <input id="goo" type="radio" name="os" checked>
+          <label for="goo">Google</label>
+        </div>
+        <div>
+          <input id="edg" type="radio" name="os">
+          <label for="edg">Edge</label>
+        </div>
+        <div>
+          <input id="bra" type="radio" name="os">
+          <label for="bra">Brave</label>
+        </div>
+        <div>
+          <input id="tor" type="radio" name="os">
+          <label for="tor">Tor</label>
+        </div>
+        <div>
+          <input id="ope" type="radio" name="os">
+          <label for="ope">Opera</label>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <div>
+          <input id="log" type="checkbox">
+          <label for="log">Logitech</label>
+        </div>
+        <div>
+          <input id="red" type="checkbox">
+          <label for="red">Redragon</label>
+        </div>
+        <div>
+          <input id="raz" type="checkbox">
+          <label for="raz">Razer</label>
+        </div>
+        <div>
+          <input id="blo" type="checkbox">
+          <label for="blo">Bloody</label>
+        </div>
+        <div>
+          <input id="epi" type="checkbox">
+          <label for="epi">Epic</label>
+        </div>
+      </div>
+      <hr>
+      <div>
+        <label for="cho">Choose:</label>
+        <select name="" id="cho">
+          <optgroup label="Python">
+            <option>v1.0</option>
+            <option>v2.0</option>
+            <option>v3.0</option>
+            <option>v4.0</option>
+            <option>v5.0</option>
+          </optgroup>
+
+          <optgroup label="Java">
+            <option>v1.0</option>
+            <option>v2.0</option>
+            <option>v3.0</option>
+            <option>v4.0</option>
+            <option>v5.0</option>
+          </optgroup>
+
+          <optgroup label="Dart">
+            <option>v1.0</option>
+            <option>v2.0</option>
+            <option>v3.0</option>
+            <option>v4.0</option>
+            <option>v5.0</option>
+          </optgroup>
+        </select>
+      </div>
+      <hr>
+      <div>
+        <input list="Countries">
+        <datalist id="Countries">
+          <option value="Egypt">
+          <option value="Syria">
+          <option value="Phalestine">
+          <option value="Iraq">
+          <option value="Ordon">
+        </datalist>
+      </div>
+      <hr>
+      <textarea name="name" cols="223" rows="13" placeholder="Tell me about your opinion."></textarea>
+      <hr>
+      <div>
+        <input type="submit" value="Send">
+        <input type="reset" value="Empty">
+      </div>
+    </form>
+  </body>
+</html>

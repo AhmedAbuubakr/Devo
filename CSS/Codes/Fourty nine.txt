@@ -1,0 +1,48 @@
+<h1>Elzero</h1>
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: serif;
+}
+
+:root {
+  --mainColor: #ff5722;
+  --secColor: #fff;
+}
+
+h1 {
+  margin: 50px auto;
+  width: 150px;
+  display: grid;
+  place-items: center;
+  background: var(--mainColor, #ff5722);
+  color: var(--secColor, #fff);
+  padding: 20px;
+  position: relative;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ff5722;
+  z-index: -1;
+}
+
+h1::before {
+  transform: skewy(12deg);
+}
+
+h1::after {
+  transform: skewy(-12deg);
+}

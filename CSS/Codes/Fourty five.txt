@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="description" content="Welcome, Hope you enjoy."/>
+      <link rel="stylesheet" href="style.css"/>
+      <script src="https://kit.fontawesome.com/deefd24c5b.js" crossorigin="anonymous"></script>
+      <title>Nothing</title>
+    </head>
+     <body>
+       <div>Elzero</div>
+     </body>
+  </html>
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+:root {
+      /* COLOR */
+  --mainColor: #fff;
+  --secColor: #999;
+  --thirdColor: #000;
+
+     /* PADDING */
+  --mainPadding: 10px;
+  --secPadding: 15px;
+  --thidPadding: 30px;
+}
+
+div::first-letter {
+  color: #f44336;
+}
+
+div {
+  margin: 100px auto;
+  width: 600px;
+  text-align: center;
+  font-size: 50px;
+  padding: 30px;
+  letter-spacing: 10px;
+  border-left: 10px solid #f44336;
+  border-right: 10px solid #673ab7;
+  position: relative;
+}
+
+div::before,
+div::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+}
+
+div::before {
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right,
+  #f44336 20%,
+  #2196f3 20%,
+  #2196f3 40%,
+  #4caf50 40%,
+  #4caf50 60%,
+  #e91e63 60%,
+  #e91e63 80%,
+  #673ab7 80%);
+}
+
+div::after {
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(to right,
+  #f44336 20%,
+  #2196f3 20%,
+  #2196f3 40%,
+  #4caf50 40%,
+  #4caf50 60%,
+  #e91e63 60%,
+  #e91e63 80%,
+  #673ab7 80%);
+}

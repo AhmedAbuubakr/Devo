@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sword | سيف">
+    <link rel="stylesheet" href="style.css">
+    <title>Sword | سيف</title>
+    <style></style>
+    <script></script>
+  </head>
+  <body>
+      <div>Product one</div>
+      <div>Product two</div>
+      <div>Product three</div>
+      <div>Product four</div>
+      <div>Product five</div>
+  </body>
+</html>
+
+
+body {
+  margin: 0;
+}
+
+div {
+  text-align: center;
+  padding: 10px 0;
+  float: left;
+  width: 18.8%;
+  margin-left: 1%;
+  opacity: .3
+}

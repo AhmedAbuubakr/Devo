@@ -1,0 +1,63 @@
+<div></div>
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --secColor: #fa3664;
+  --thiColor: #1692fc;
+}
+
+div {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  margin: 50px auto;
+  border-radius: 50%;
+  border: 5px solid #f01d56;
+  border-right-color: transparent;
+  position: relative;
+  animation: spin 1s infinite linear;
+}
+
+div:hover {
+  animation-play-state: paused;
+}
+
+div::before,
+div::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+}
+
+div::before {
+  width: 130%;
+  height: 130%;
+  border: 5px solid #2494fe;
+  border-left-color: transparent;
+}
+
+div::after {
+  width: 160%;
+  height: 160%;
+  border: 5px solid #fcb000;
+  border-top-color: transparent;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(1turn)
+  }
+}

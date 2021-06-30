@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8"/>
+      <meta name="description" content="Welcome, Hope you enjoy."/>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css"/>
+      <title>Nothing</title>
+      <script src="https://kit.fontawesome.com/deefd24c5b.js" crossorigin="anonymous"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+      <script></script>
+      <style></style>
+    </head>
+     <body>
+       <div class="back">
+         <div class="head">
+           <div class="nav">
+             <ul>
+               <li class="logo"> Port <span>Hot</span> </li>
+               <li class="items"> <a href="#">Home</a> </li>
+               <li class="items"> <a href="#">Projects</a> </li>
+               <li class="items"> <a href="#">Services</a> </li>
+               <li class="items"> <a href="#">About</a> </li>
+               <li class="items"> <a href="#">Contact <i class="fas fa-chevron-down"></i>
+                 <div class="menu">
+                   <ul>
+                     <li> <a href="#">Gmail</a> </li>
+                     <li> <a href="#">Number</a> </li>
+                     <li> <a href="#">Email</a> </li>
+                   </ul>
+                 </div>
+               </a>
+              </li>
+             </ul>
+           </div>
+
+           <div class="text-box">
+             <h1 class="heading-primary">
+               <span class="heading-primary-main">Outdoors</span>
+               <span class="heading-primary-sub">Is where life happens</span>
+             </h1>
+             <p>There is a story behind every person. There is a reason why they are the way they are.
+              Thing about that before you judge someone.Because its all about us in this dman life you
+               will learn you will earn you will lose. After all we all trying to be good.</p>
+             <a href="#" class="btn">Discover the trues</a>
+           </div>
+         </div>
+
+         <div class="section">
+           <h1>Exciting tours for adventurous people</h1>
+           <div class="flex">
+             <div class="one">
+               <h3 class="first-h1">You're going to fall in love with nature</h3>
+               <p class="first-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+               ipsum sapiente aspernatur liberorepellat quis consequatur ducimus
+               quam nisi exercitationem omnis earum qui.</p>
+
+               <h3 class="second-h1">Live adventures like you never have before</h3>
+               <p class="second-p">Lorem ipsum dolor sit amet consectetur
+               adipisicing elit. Asperiores nulla deserunt voluptatum nam.</p>
+
+               <a href="#" class="btn">Learn more &rarr;</a>
+             </div>
+             <div class="two">
+               <img src="The Egypt.png" alt="Img" title="Pyramids">
+             </div>
+           </div>
+         </div>
+
+         <div class="box">
+           <div class="one">
+             <i class="fas fa-archway"></i>
+             <h1>Explore the world</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+             ipsum sapiente aspernatur.</p>
+           </div>
+
+           <div class="two">
+             <i class="fas fa-box-open"></i>
+             <h1>Meet nature</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+             ipsum sapiente aspernatur.</p>
+           </div>
+
+           <div class="three">
+             <i class="fas fa-bahai"></i>
+             <h1>Find your way</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+             ipsum sapiente aspernatur.</p>
+           </div>
+
+           <div class="four">
+             <i class="fas fa-dungeon"></i>
+             <h1>Live a healthier life</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
+             ipsum sapiente aspernatur.</p>
+           </div>
+         </div>
+
+         <div class="cards">
+           <div class="front">
+             <ul>
+               <li>3 day tours</li>
+               <li>Up to 30 people</li>
+               <li>2 tour guides</li>
+               <li>Sleep in cozy hotels</li>
+               <li>Difficulty:easy</li>
+               <li></li>
+             </ul>
+           </div>
+           <div class="end">
+
+           </div>
+         </div>
+
+       </div>
+     </body>
+  </html>
+
+
+
+
+
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --secColor: #151515;
+  --thiColor: darkred;
+}
+
+                             /* START HEADER */
+
+.head {
+  background: url(chamal.jpg) top center no-repeat;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+                             /* START NAVBAR */
+.nav {
+  background: #151515;
+  padding: 5px 50px;
+}
+
+.nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.nav ul li.items {
+  margin: 10px 0;
+  padding: 15px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.nav ul li.items::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: .5s;
+}
+
+.nav ul li.items:hover::after {
+  width: 102%;
+  background: #fff;
+}
+
+.nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  transition: .3s;
+  text-align: center;
+}
+
+.nav ul li.logo {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  user-select: none;
+  flex: 1;
+}
+
+.nav ul li.logo span {
+  background: #8d4a27;
+  color: #151515;
+  padding: 10px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  display: inline-block;
+
+}
+
+.menu {
+  display: none;
+  position: relative;
+}
+
+.nav ul li.items:hover .menu {
+  display: block;
+  position: absolute;
+  top: 260%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #151515;
+  z-index: 1;
+}
+
+.nav ul li.items:hover .menu ul {
+  display: block;
+  margin: 5px;
+}
+
+.nav ul li.items:hover .menu ul li {
+  border-bottom: 1px solid #fff;
+  padding: 15px 45px;
+}
+
+.nav ul li.items:hover .menu ul li:last-child {
+  border: none;
+}
+
+.nav ul li.items:hover .menu ul li a {
+  color: #787878;
+}
+
+.nav ul li.items:hover .menu ul li a:hover {
+  color: #cccccc;
+}
+
+.nav ul li.items i {
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .nav {
+    padding: 5px 40px;
+  }
+
+  .nav ul li.items {
+    width: 100%;
+    transition: .5s;
+    cursor: pointer;
+  }
+
+  .nav ul li.items::after {
+    opacity: 0;
+  }
+
+  .nav ul li.items:hover {
+    box-shadow: inset 0 0 10px #fff,
+                inset 0 0 10px #fff;
+  }
+
+  .nav ul li a {
+    font-size: 20px;
+  }
+
+  .nav ul li.logo {
+    font-size: 24px;
+  }
+}
+                               /* END NAVBAR */
+
+                               /* START TEXT */
+.text-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.heading-primary-main {
+  font-size: 52px;
+  letter-spacing: 50px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.heading-primary-sub {
+  font-size: 30px;
+  letter-spacing: 14px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.text-box p {
+  color: #fff;
+  text-align: center;
+  width: 660px;
+  line-height: 1.3;
+  margin-bottom: 80px;
+}
+
+.text-box .btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  background: #8d4a27;
+  padding: 15px 25px;
+  display: inline-block;
+  transition: .5s;
+  border-radius: 25px;
+  position: relative;
+  left: 30%;
+}
+
+.text-box .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px #000;
+}
+
+.text-box .btn:focus {
+  transform: translateY(0px);
+  box-shadow: 0 2px 15px #000;
+}
+
+.text-box .btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  z-index: -1;
+  transition: .5s;
+}
+
+.text-box .btn:hover::after {
+  transform: scale(1.5, 1.7);
+  opacity: 0;
+  background: #8d4a27;
+}
+                                  /* END TEXT */
+.section {
+  background: #fff;
+}
+
+.section h1 {
+  text-transform: uppercase;
+  text-align: center;
+  background: linear-gradient(to right bottom, #8d4a27, #fff);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 70px;
+  transition: .2s;
+}
+
+.section h1:hover {
+  transform: skewY(3deg) scale(1.1);
+  box-shadow: 0 0 15px #000;
+}
+
+.section .flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section
+.first-h1,
+.first-p,
+.second-h1,
+.second-p {
+  color: #777;
+  width: 500px;
+  line-height: 1.8;
+}
+
+.section .first-h1 {
+  margin: 15px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.section .first-p {
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+
+.section .second-h1 {
+  margin: 16px 0;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+.section .second-p {
+  padding-bottom: 30px;
+  font-size: 15px;
+}
+
+.section .btn {
+  text-decoration: none;
+  color: #8d4a27;
+  border-bottom: 1px solid #8d4a27;
+  padding: 10px 0;
+  display: inline-block;
+  transition: .5s;
+}
+
+.section .btn:hover {
+  background: #8d4a27;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 100px #000;
+}
+
+.section .btn:focus {
+  transform: translateY(0);
+  background: #8d4a27;
+  color: #fff;
+  box-shadow: 0 5px 100px #000;
+}
+
+.section .one {
+  margin-right: 200px;
+}
+
+.section img {
+  width: 600px;
+  height: 400px;
+  padding: 10px;
+  transition: .5s;
+}
+
+.section img:hover {
+  border: 10px solid #8d4a27;
+}
+
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 100px;
+  background: linear-gradient(to right bottom, #8d4a27, #000);
+  height: 700px;
+}
+
+.box > div {
+  width: 250px;
+  background: #fff;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 30px 70px rgb(0 0 0 / 15%);
+  transition: .3s;
+}
+
+.box > div:hover {
+  transform: translateY(-15px) scale(1.05);
+}
+
+.box i {
+  font-size: 65px;
+  background: #8d4a27;
+  -webkit-background-clip: text;
+  color: transparent;
+  margin: 45px;
+}
+
+.box h1 {
+  color: #777;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.box p {
+  color: #777;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+
+/* Small Screens */
+
+@media (max-width: 767px) {
+  .box > div {
+    background: greenyellow;
+  }
+}
+
+/* Small Screens */
+
+@media (min-width: 768px) {
+  .box > div {
+    background: red;
+  }
+}
+
+/* Medium Screens */
+
+@media (min-width: 992px) {
+  .box > div {
+    background: blue;
+  }
+}
+
+/* Large Screens */
+
+@media (min-width: 1200px) {
+  .box > div {
+    background: darkolivegreen;
+  }
+}

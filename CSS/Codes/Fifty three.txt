@@ -1,0 +1,59 @@
+<div></div>
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --secColor: #fa3664;
+  --thiColor: #1692fc;
+
+}
+
+div {
+  margin: 50px auto;
+  width: 200px;
+  height: 200px;
+  color: #fff;
+  position: relative;
+  font-size: 30px;
+  perspective: 400px;
+  transform-style: preserve-3d;
+  transition: .5s;
+}
+
+div:hover {
+  transform: rotateY(180deg);
+}
+
+div::before,
+div::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  backface-visibility: hidden;
+  perspective: 400px;
+}
+
+div::before {
+  content: "Front";
+  background: #fa3664;
+}
+
+
+div::after {
+  content: "Back";
+  background: #1692fc;
+  transform: rotateY(180deg);
+}

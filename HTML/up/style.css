@@ -1,0 +1,142 @@
+:root {
+    /* Color */
+    --main-color: #920000;
+    --sec-color: rgba(146, 0, 0, 40%);
+}
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: "open sans";
+}
+.background {
+    background: url(../../images/tim-navis-Flxl7OUuO1M-unsplash.jpg) center;
+    background-size: cover;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 50%);
+}
+.content {
+    width: 650px;
+    background-color: #fff;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    margin: 25px;
+}
+.content h2 {
+    font-size: 25px;
+    color: #3f3f3f;
+    text-align: center;
+    background-color: #ececec;
+    padding: 15px;
+    border-bottom: 1px solid #b6b6b6;
+    border-radius: 10px 10px 0 0;
+}
+.content form {
+    padding: 30px;
+}
+.content form .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .content form .info {
+        flex-direction: column;
+    }
+}
+.content form .info .group {
+    flex-basis: 49%;
+}
+@media (max-width: 768px) {
+    .content form .info .group {
+        width: 100%;
+    }
+}
+.content form .group {
+    margin-bottom: 20px;
+    position: relative;
+}
+.content form .group i {
+    position: absolute;
+    width: 45px;
+    height: 38px;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    line-height: 2.5;
+    font-size: 15px;
+    color: var(--main-color);
+}
+.content form .label {
+    display: block;
+    color: var(--main-color);
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.content form label {
+    font-size: 15px;
+    margin-right: 5px;
+}
+.content form .label span {
+    color: #f00;
+}
+.content form .group .inp {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #acacac;
+    outline: 0;
+    border-radius: 5px;
+}
+.content form .group .inp-grp {
+    padding: 10px 10px 10px 40px;
+}
+.content form .group .select {
+    padding: 8px;
+}
+.content form .group .number {
+    padding: 8px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #747474;
+}
+.content form .group .range {
+    width: 100%;
+}
+.content form .group .textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    resize: vertical;
+    height: 130px;
+}
+.content .foot {
+    padding: 20px;
+    background-color: #ececec;
+    border-top: 1px solid #b6b6b6;
+    text-align: center;
+}
+.content .foot .btn {
+    text-decoration: none;
+    background-color: var(--main-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    transition: .3s;
+}
+.content .foot .btn:hover {
+    opacity: .8;
+}

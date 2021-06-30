@@ -1,0 +1,55 @@
+       <div class="parent">
+         <div>You have been fucked</div>
+         <div>You have been fucked</div>
+         <div>You have been fucked</div>
+         <div>You have been fucked</div>
+         <div>You have been fucked</div>
+         <div>You have been fucked</div>
+         <div>You have been fucked</div>
+         <div>You have been fucked</div>
+         <div>You have been fucked</div>
+         <div>You have been fucked</div>
+       </div>
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --secColor: #fa3664;
+  --thiColor: #1692fc;
+}
+
+.parent {
+  background: #fff;
+}
+
+.parent div {
+  color: #00d508;
+  margin: 50px auto;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 15px;
+  animation: color 2.5s linear infinite alternate;
+  user-select: none;
+  text-transform: uppercase;
+  padding: 150px;
+}
+
+@keyframes color {
+  from {
+    transform: translateX(100px) rotate(90deg);
+  }
+  to {
+    transform: translateX(-100px) translateY(-1000px);
+    box-shadow: 0 0 100px #000;
+    opacity: .1;
+  }
+}

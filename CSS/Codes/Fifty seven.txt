@@ -1,0 +1,37 @@
+<span></span>
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+:root {
+  --secColor: #fa3664;
+  --thiColor: #1692fc;
+}
+
+span {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  border: 5px solid #000;
+  border-left-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px;
+  animation: spin-left 1s infinite linear reverse;
+}
+
+@keyframes spin-left {
+  to {
+    transform: rotate(1turn);
+  }
+}

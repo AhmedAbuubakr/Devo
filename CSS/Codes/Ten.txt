@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="Sword | سيف">
+    <link rel="stylesheet" href="style.css">
+    <title>Sword | سيف</title>
+    <style></style>
+    <script></script>
+  </head>
+  <body>
+    <div>Product One</div>
+    <div>Product Two</div>
+    <div>Product Three</div>
+    <div>Product Four</div>
+    <div>Product Five</div>
+    <div>Product Six</div>
+    <div>Product Seven</div>
+    <div>Product Eight</div>
+    <div>Product Nine</div>
+    <div>Product Ten</div>
+    <div>Product Eliven</div>
+  </body>
+</html>
+
+body {
+  margin: 0;
+}
+
+div {
+  padding: 10px 0;
+  text-align: center;
+  background: darkgreen;
+  float: left;
+  width: calc(88% / 11);
+  margin-left: 1%;
+}
+
+/* Content Width Is: 100%
+   12 Spaces 1% * 11 => 12% From Content Width
+   95% Available Spaces
+   11 Elements The Widht Is: 88% / 11
+ */
