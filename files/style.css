@@ -286,7 +286,7 @@ ul {
       rgba(239, 35, 59, 95%),
       rgba(239, 35, 59, 95%)
     ),
-    url(../images/hero-bg-1.jpg);
+    url(images/hero-bg-1.jpg);
   position: relative;
   padding: 150px 0 0;
   z-index: 3;
